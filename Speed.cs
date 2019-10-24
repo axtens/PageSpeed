@@ -54,6 +54,7 @@ namespace PageSpeed
                 request.AddParameter("utm_campaign", utm_campaign);
             if (null != utm_source) 
                 request.AddParameter("utm_source", utm_source);
+
             var response = client.Execute(request);
             return response.Content;
         }
